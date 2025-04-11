@@ -18,7 +18,7 @@ $.fn.gallery = function (images) {
   $("#gallery img").click(function () {
     currentImg = Number($(this).attr("index"));
     $("#slider-img").attr("src", images[currentImg]);
-    $("#slider").fadeIn();
+    $("#slider").css("display", "flex").hide().fadeIn();
   });
 
   $("#nextBtn").click(function () {
